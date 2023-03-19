@@ -1,4 +1,6 @@
 
+
+
 local gui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
 local title = Instance.new("TextLabel")
@@ -193,7 +195,7 @@ tgggggtitle.BorderSizePixel = 2
 tgggggtitle.Name = ("info")
 tgggggtitle.TextScaled = true
 tgggggtitle.Font = ("Arcade")
-tgggggtitle.TextColor3 = Color3.fromRGB(103, 103, 103)
+tgggggtitle.TextColor3 = Color3.fromRGB(255, 128, 0)
 tgggggtitle.Text = ("Reaper Of Halloween - Costs 350000 LOVE (Check Inventory For More Attacks Pls .-.")
 tgggggtitle.Visible = false
 
@@ -353,8 +355,8 @@ remove.MouseButton1Click:Connect(function()
 	frame.Visible = false
 end)
 
-etgggggtitle.MouseButton1Click:Connect(function()
-
+etggggravity.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8020.61963, 12, -53.9515877, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 end)
 
 bgravity.MouseEnter:Connect(function()
