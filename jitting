@@ -1,0 +1,615 @@
+
+local gui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local remove = Instance.new("TextButton")
+local gravity = Instance.new("TextButton")
+local ggravity = Instance.new("TextButton")
+local gggravity = Instance.new("TextButton")
+local gtitle = Instance.new("TextButton")
+local bgravity = Instance.new("TextButton")
+local ggtitle = Instance.new("TextLabel")
+local gggtitle = Instance.new("TextLabel")
+local ggggtitle = Instance.new("TextButton")
+local gggggtitle = Instance.new("TextLabel")
+local ggggravity = Instance.new("TextButton")
+local tgggggtitle = Instance.new("TextLabel")
+local tggggravity = Instance.new("TextButton")
+local etgggggtitle = Instance.new("TextLabel")
+local etggggravity = Instance.new("TextButton")
+gui.ResetOnSpawn = false
+
+
+wait(4)
+gui.Parent = game.Players.Farzin290x.PlayerGui 
+gui.Name = "JitterGreen"
+frame.Name = ("Fr")
+frame.Parent = gui
+frame.Size = UDim2.new(0.5,0,0.65,0)
+frame.Active = true
+frame.Draggable = true
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.BorderColor3 = Color3.fromRGB(85, 255, 0)
+frame.BorderSizePixel = 5
+title.Parent = gui.Fr
+title.Size = UDim2.new(1,0,0.15,0)
+title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderColor3 = Color3.fromRGB(85, 255, 0)
+title.BorderSizePixel = 2
+title.Name = ("Uptle")
+title.TextScaled = true
+title.Font = ("Arcade")
+title.TextColor3 = Color3.fromRGB(85, 255, 0)
+title.Text = ("JitterGreen - V1 By Farzin")
+gtitle.Position = UDim2.new(0, 0,-0.05, 0)
+gtitle.Parent = gui
+gtitle.Size = UDim2.new(1,0,0.15,0)
+gtitle.BackgroundTransparency = 1
+gtitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gtitle.BorderColor3 = Color3.fromRGB(85, 255, 0)
+gtitle.BorderSizePixel = 2
+gtitle.Name = ("info")
+gtitle.TextScaled = true
+gtitle.Font = ("Arcade")
+gtitle.TextColor3 = Color3.fromRGB(85, 255, 0)
+gtitle.Text = ("VHS Sans - Costs 7.5k LOVE")
+remove.Parent = gui.Fr
+remove.Size = UDim2.new(0.1,0,0.1,0)
+remove.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+remove.BorderColor3 = Color3.fromRGB(85, 255, 0)
+remove.BorderSizePixel = 2
+remove.Name = ("Close")
+remove.TextScaled = true
+remove.Font = ("Arcade")
+remove.TextColor3 = Color3.fromRGB(85, 255, 0)
+remove.Text = ("X")
+remove.Position = UDim2.new(0.9, 0, 0.9, 0)
+
+gtitle.Visible = false
+
+gravity.Parent = gui.Fr
+gravity.Size = UDim2.new(0.2,0,0.1,0)
+gravity.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gravity.BorderColor3 = Color3.fromRGB(85, 255, 0)
+gravity.BorderSizePixel = 2
+gravity.Name = ("Grav")
+gravity.TextScaled = true
+gravity.Font = ("Arcade")
+gravity.TextColor3 = Color3.fromRGB(85, 255, 0)
+gravity.Text = ("VHS Sans")
+gravity.Position = UDim2.new(0.01, 0, 0.2, 0)
+
+ggggravity.Parent = gui.Fr
+ggggravity.Size = UDim2.new(0.2,0,0.1,0)
+ggggravity.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ggggravity.BorderColor3 = Color3.fromRGB(148, 148, 148)
+ggggravity.BorderSizePixel = 2
+ggggravity.Name = ("Grav")
+ggggravity.TextScaled = true
+ggggravity.Font = ("Arcade")
+ggggravity.TextColor3 = Color3.fromRGB(255, 255, 0)
+ggggravity.Text = ("Reworked Science Sans")
+ggggravity.Position = UDim2.new(0.01, 0, 0.33, 0)
+
+tggggravity.Parent = gui.Fr
+tggggravity.Size = UDim2.new(0.2,0,0.1,0)
+tggggravity.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tggggravity.BorderColor3 = Color3.fromRGB(255, 116, 0)
+tggggravity.BorderSizePixel = 2
+tggggravity.Name = ("Grav")
+tggggravity.TextScaled = true
+tggggravity.Font = ("Arcade")
+tggggravity.TextColor3 = Color3.fromRGB(255, 116, 3)
+tggggravity.Text = ("Reaper Of Halloween")
+tggggravity.Position = UDim2.new(0.23, 0, 0.33, 0)
+
+etggggravity.Parent = gui.Fr
+etggggravity.Size = UDim2.new(0.2,0,0.1,0)
+etggggravity.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+etggggravity.BorderColor3 = Color3.fromRGB(156,156,156)
+etggggravity.BorderSizePixel = 2
+etggggravity.Name = ("Grav")
+etggggravity.TextScaled = true
+etggggravity.Font = ("Arcade")
+etggggravity.TextColor3 = Color3.fromRGB(156, 156, 156)
+etggggravity.Text = ("Omnify")
+etggggravity.Position = UDim2.new(0.45, 0, 0.33, 0)
+
+bgravity.Parent = gui.Fr
+bgravity.Size = UDim2.new(0.2,0,0.1,0)
+bgravity.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+bgravity.BorderColor3 = Color3.fromRGB(255, 0, 0)
+bgravity.BorderSizePixel = 2
+bgravity.Name = ("Grav2")
+bgravity.TextScaled = true
+bgravity.Font = ("Arcade")
+bgravity.TextColor3 = Color3.fromRGB(255, 0, 0)
+bgravity.Text = ("ErrorSwap Sans")
+bgravity.Position = UDim2.new(0.23, 0,0.2, 0)
+
+ggtitle.Position = UDim2.new(0, 0,-0.05, 0)
+ggtitle.Parent = gui
+ggtitle.Size = UDim2.new(1,0,0.15,0)
+ggtitle.BackgroundTransparency = 1
+ggtitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ggtitle.BorderColor3 = Color3.fromRGB(85, 255, 0)
+ggtitle.BorderSizePixel = 2
+ggtitle.Name = ("info")
+ggtitle.TextScaled = true
+ggtitle.Font = ("Arcade")
+ggtitle.TextColor3 = Color3.fromRGB(103, 0, 0)
+ggtitle.Text = ("ErrorSwap - Costs 650000 LOVE (Note : Check Inventory For More Atks")
+ggtitle.Visible = false
+
+gggtitle.Position = UDim2.new(0, 0,-0.05, 0)
+gggtitle.Parent = gui
+gggtitle.Size = UDim2.new(1,0,0.15,0)
+gggtitle.BackgroundTransparency = 1
+gggtitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gggtitle.BorderColor3 = Color3.fromRGB(255, 255, 0)
+gggtitle.BorderSizePixel = 2
+gggtitle.Name = ("info")
+gggtitle.TextScaled = true
+gggtitle.Font = ("Arcade")
+gggtitle.TextColor3 = Color3.fromRGB(255, 255, 0)
+gggtitle.Text = ("Dream Ink - Costs 500000 LOVE (Note : Check Inventory For More Atks")
+gggtitle.Visible = false
+
+ggggtitle.Position = UDim2.new(0, 0,-0.05, 0)
+ggggtitle.Parent = gui
+ggggtitle.Size = UDim2.new(1,0,0.15,0)
+ggggtitle.BackgroundTransparency = 1
+ggggtitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ggggtitle.BorderColor3 = Color3.fromRGB(255, 255, 0)
+ggggtitle.BorderSizePixel = 2
+ggggtitle.Name = ("info")
+ggggtitle.TextScaled = true
+ggggtitle.Font = ("Arcade")
+ggggtitle.TextColor3 = Color3.fromRGB(255, 0, 0)
+ggggtitle.Text = ("F.E.L.L -  Costs 150000 LOVE (Note : CHECK INVENTORY FOR MORE ATTACKS PLEASEEEEEEEE")
+ggggtitle.Visible = false
+
+gggggtitle.Position = UDim2.new(0, 0,-0.05, 0)
+gggggtitle.Parent = gui
+gggggtitle.Size = UDim2.new(1,0,0.15,0)
+gggggtitle.BackgroundTransparency = 1
+gggggtitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gggggtitle.BorderColor3 = Color3.fromRGB(255, 255, 0)
+gggggtitle.BorderSizePixel = 2
+gggggtitle.Name = ("info")
+gggggtitle.TextScaled = true
+gggggtitle.Font = ("Arcade")
+gggggtitle.TextColor3 = Color3.fromRGB(103, 103, 103)
+gggggtitle.Text = ("Reworked Science - Costs 69K LOVE (Check Inventory For More Attacks X_x")
+gggggtitle.Visible = false
+
+tgggggtitle.Position = UDim2.new(0, 0,-0.05, 0)
+tgggggtitle.Parent = gui
+tgggggtitle.Size = UDim2.new(1,0,0.15,0)
+tgggggtitle.BackgroundTransparency = 1
+tgggggtitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tgggggtitle.BorderColor3 = Color3.fromRGB(255, 255, 0)
+tgggggtitle.BorderSizePixel = 2
+tgggggtitle.Name = ("info")
+tgggggtitle.TextScaled = true
+tgggggtitle.Font = ("Arcade")
+tgggggtitle.TextColor3 = Color3.fromRGB(103, 103, 103)
+tgggggtitle.Text = ("Reaper Of Halloween - Costs 350000 LOVE (Check Inventory For More Attacks Pls .-.")
+tgggggtitle.Visible = false
+
+etgggggtitle.Position = UDim2.new(0, 0,-0.05, 0)
+etgggggtitle.Parent = gui
+etgggggtitle.Size = UDim2.new(1,0,0.15,0)
+etgggggtitle.BackgroundTransparency = 1
+etgggggtitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+etgggggtitle.BorderColor3 = Color3.fromRGB(255, 255, 0)
+etgggggtitle.BorderSizePixel = 2
+etgggggtitle.Name = ("info")
+etgggggtitle.TextScaled = true
+etgggggtitle.Font = ("Arcade")
+etgggggtitle.TextColor3 = Color3.fromRGB(103, 103, 103)
+etgggggtitle.Text = ("Sets Your Hp To 999999, Costs 460k LOVE")
+etgggggtitle.Visible = false
+
+
+ggravity.Parent = gui.Fr
+ggravity.Size = UDim2.new(0.2,0,0.1,0)
+ggravity.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ggravity.BorderColor3 = Color3.fromRGB(255, 255, 0)
+ggravity.BorderSizePixel = 2
+ggravity.Name = ("Grav")
+ggravity.TextScaled = true
+ggravity.Font = ("Arcade")
+ggravity.TextColor3 = Color3.fromRGB(255, 255, 0)
+ggravity.Text = ("DreamInk")
+ggravity.Position = UDim2.new(0.45, 0, 0.2, 0)
+
+gggravity.Parent = gui.Fr
+gggravity.Size = UDim2.new(0.2,0,0.1,0)
+gggravity.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gggravity.BorderColor3 = Color3.fromRGB(255, 0, 0)
+gggravity.BorderSizePixel = 2
+gggravity.Name = ("Grav")
+gggravity.TextScaled = true
+gggravity.Font = ("Arcade")
+gggravity.TextColor3 = Color3.fromRGB(255, 0, 0)
+gggravity.Text = ("UV Fell / Reworked Fell")
+gggravity.Position = UDim2.new(0.68, 0, 0.2, 0)
+
+--Functions
+gravity.MouseButton1Click:Connect(function()
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-16821.4355, 1.23623896, 176.729843, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Character.Chest:Remove()
+	game.Players.LocalPlayer.Character.Leg1:Remove()
+	game.Players.LocalPlayer.Character.Leg2:Remove()
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8003.87305, 1.69301081, 167.027954, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(0.5)
+
+	game.Players.LocalPlayer.Character.Head.BillboardGui.TextLabel.Text = ("YOUR FAULT")
+	game.Players.LocalPlayer.Character.Head.BillboardGui.TextLabel.TextColor3 = Color3.fromRGB(0,0,0)
+	game.Players.LocalPlayer.Character.Head.BillboardGui.TextLabel.TextStrokeColor3 = Color3.fromRGB(255,0,0)
+
+	--Appearance
+
+	game.Players.LocalPlayer.Character.Headz.Eyes.Color = Color3.fromRGB(255,0,0)
+	game.Players.LocalPlayer.Character.Headz.Eyes.Name = ("E1")
+	game.Players.LocalPlayer.Character.Headz.Eyes.Color = Color3.fromRGB(255,0,0)
+	game.Players.LocalPlayer.Character.Headz.Eyes.Name = ("E2")
+	game.Players.LocalPlayer.Character.Headz.Eyes.Name = ("HeadCrack")
+	game.Players.LocalPlayer.Character.Headz.Eyes:Remove()
+	game.Players.LocalPlayer.Character.Leg1.Union.Name = ("L1")
+	game.Players.LocalPlayer.Character.Leg1.Union.Name = ("L2")
+	game.Players.LocalPlayer.Character.Leg1.Union.Color = Color3.fromRGB(255,255,255)
+	game.Players.LocalPlayer.Character.Leg2.Union.Name = ("L1")
+	game.Players.LocalPlayer.Character.Leg2.Union.Name = ("L2")
+	game.Players.LocalPlayer.Character.Leg2.Union.Color = Color3.fromRGB(255,255,255)
+	game.Players.LocalPlayer.Character.Headz.Teeth:Remove()
+	game.Players.LocalPlayer.Backpack.Bone:Remove()
+	game.Players.LocalPlayer.Backpack["Blue Bone"]:Remove()
+	game.Players.LocalPlayer.Backpack["Trio Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Giant Trio Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Knife Throw"]:Remove()
+	game.Players.LocalPlayer.Backpack["Knife Surround"]:Remove()
+	game.Players.LocalPlayer.Backpack["Knife Blast"].Name = ("Attack_Slash")
+	game.Players.LocalPlayer.Backpack["Attack_Slash"].ToolTip = ("VHS Sans Slash")
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30178.6602, 0.943609297, -85.2601318, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(0.5)
+	game.Players.LocalPlayer.Backpack["Unrivaled Defense"].Name = ("VHS Heal")
+	game.Players.LocalPlayer.Backpack["Axe"]:Remove()
+	game.Players.LocalPlayer.Backpack["Sickness"].Name = ("Hack")
+	--Behavior
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+
+
+	--Loop
+
+	while true do
+		game.Players.LocalPlayer.Character.Head.BillboardGui.Frame1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+		wait(0.1)
+		game.Players.LocalPlayer.Character.Headz.E1.Color = Color3.fromRGB(0,0,0)
+		game.Players.LocalPlayer.Character.Headz.E2.Color = Color3.fromRGB(0,0,0)
+		wait(0.1)
+		game.Players.LocalPlayer.Character.Headz.E1.Color = Color3.fromRGB(255,0,0)
+		game.Players.LocalPlayer.Character.Headz.E2.Color = Color3.fromRGB(255,0,0)
+	end
+
+end)
+
+
+bgravity.MouseButton1Click:Connect(function()
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8081.70117, 1.70181584, -105.972015, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Character.Chest:Remove()
+	wait(0.2)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8003.87305, 1.693012, 232.02771, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack.Bone:Remove()
+	game.Players.LocalPlayer.Backpack["Triple Gaster Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Blue Bone"]:Remove()
+	game.Players.LocalPlayer.Backpack.String:Remove()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7939.28516, 1.69840097, -28.0270081, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack.Dodge:Remove()
+	game.Players.LocalPlayer.Backpack["Blue Bone Row"]:Remove()
+	game.Players.LocalPlayer.Backpack["Small Bone Row"].Name = ("Bone Barrage")
+	game.Players.LocalPlayer.Backpack["Long Bone Row"].Name = ("Rowed Bones")
+	game.Players.LocalPlayer.Backpack["Quad Bones"].Name = ("!Errorify¡")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30178.6309, 0.94511956, -114.260086, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+
+end)
+
+gravity.MouseEnter:Connect(function()
+	gtitle.Visible = true
+end)
+
+gravity.MouseLeave:Connect(function()
+	gtitle.Visible = false
+end)
+
+tggggravity.MouseEnter:Connect(function()
+     tgggggtitle.Visible = true
+end)
+
+tggggravity.MouseLeave:Connect(function()
+	tgggggtitle.Visible = false
+end)
+
+etggggravity.MouseEnter:Connect(function()
+	etgggggtitle.Visible = true
+end)
+
+etggggravity.MouseLeave:Connect(function()
+	etgggggtitle.Visible = false
+end)
+
+
+remove.MouseButton1Click:Connect(function()
+	frame.Visible = false
+end)
+
+etgggggtitle.MouseButton1Click:Connect(function()
+
+end)
+
+bgravity.MouseEnter:Connect(function()
+	ggtitle.Visible = true
+end)
+
+gggravity.MouseButton1Click:Connect(function()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8003.71484, 1.69840097, -92.9729156, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack["Blue Bone"]:Remove()
+	game.Players.LocalPlayer.Backpack.Bone.Name = ("Bone Barrage")
+	wait(0.1)
+	game.Players.LocalPlayer.Backpack["Bone Barrage"].ToolTip = ("Spawns 9 Bones")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7939.28516, 1.69840097, -28.0270081, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack.Dodge:Remove()
+	game.Players.LocalPlayer.Backpack["Small Bone Row"].Name = ("Bone Barrage 2")
+	wait(0.1)
+	game.Players.LocalPlayer.Backpack["Bone Barrage 2"].ToolTip = ("Spawns 7 Bones")
+	game.Players.LocalPlayer.Backpack["Bone Cage"]:Remove()
+	game.Players.LocalPlayer.Backpack["Long Bone Row"].Name = ("Bone Row")
+	game.Players.LocalPlayer.Backpack["Quad Bones"].Name = ("Bone Area")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30178.6816, 0.942504048, -57.2600746, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack["Giant Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Dual Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Phantom Papyrus"]:Remove()
+	game.Players.LocalPlayer.Backpack["Giant Spinning Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Giant Trident"]:Remove()
+	game.Players.LocalPlayer.Backpack["Giant Spinning Bones"].Name = ("Final Spinning Bones")
+	game.Players.LocalPlayer.Character.Chest:Remove()
+	game.Players.LocalPlayer.Character.Headz:Remove()
+	game.Players.LocalPlayer.Character.Leg1:Remove()
+	game.Players.LocalPlayer.Character.Leg2:Remove()
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8081.85938, 1.69371247, 206.027954, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+
+
+
+
+
+
+
+
+
+	wait(2)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7939.28516, 1.69840097, -119.027008, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack.Fireball:Remove()
+	game.Players.LocalPlayer.Backpack.Iceball:Remove()
+	game.Players.LocalPlayer.Backpack["Fire Flower"]:Remove()
+	game.Players.LocalPlayer.Backpack["Double Cherry"].Name = ("Will To Live")
+	game.Players.LocalPlayer.Backpack["Giant Pipe Zone"]:Remove()
+	game.Players.LocalPlayer.Backpack["Pipe Zone"]:Remove()
+	game.Players.LocalPlayer.Backpack["1-UP"].Name = ("Sharpened Dedication")
+	game.Players.LocalPlayer.Backpack["Sharpened Dedication"].ToolTip = ("...????")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30178.6309, 0.94511956, -114.260086, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+
+
+
+	while true do
+		game.Players.LocalPlayer.Character.Headz.Eyes.Color = Color3.fromRGB(255,0,0)
+		wait(0.1)
+		game.Players.LocalPlayer.Character.Headz.Eyes.Color = Color3.fromRGB(255,255,0)
+		wait(0.1)
+	end
+end)
+
+ggggravity.MouseButton1Click:Connect(function()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8082.39062, 1.94301081, 231.543182, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(2)
+	game.Players.LocalPlayer.Backpack.Bone:Remove()
+	game.Players.LocalPlayer.Backpack["Blue Bone"]:Remove()
+	game.Players.LocalPlayer.Backpack["Giant Blue Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Giant Orange Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Gaster Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Quad Blaster"].Name = ("Quad Blue Beams")
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7939.28516, 1.69840097, -54.0270081, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack.Dodge:Remove()
+	game.Players.LocalPlayer.Backpack.Bloxiade.Handle.Mesh.MeshId = ("http://www.roblox.com/asset/?id=48371371")
+	game.Players.LocalPlayer.Backpack.Bloxiade.Handle.Mesh.TextureId = ("http://www.roblox.com/asset/?id=48371394")
+	game.Players.LocalPlayer.Backpack.Bloxiade.Handle.Mesh.VertexColor = Vector3.new(0,1,1)
+	game.Players.LocalPlayer.Backpack.Bloxiade.Name = ("Speed Potion")
+	game.Players.LocalPlayer.Backpack.BloxyCola.Handle.Mesh.MeshId = ("http://www.roblox.com/asset/?id=48371371")
+	game.Players.LocalPlayer.Backpack.BloxyCola.Handle.Mesh.TextureId = ("http://www.roblox.com/asset/?id=48371394")
+	game.Players.LocalPlayer.Backpack.BloxyCola.Handle.Mesh.VertexColor = Vector3.new(0.15,2,0)
+	game.Players.LocalPlayer.Backpack.BloxyCola.Name = ("Health Potion")
+	wait(0.1)
+	game.Players.LocalPlayer.Backpack["Health Potion"].ToolTip = ("Very Good Amount of Health Each Time")
+	game.Players.LocalPlayer.Backpack["Rocket Launcher"].Name = ("[Gadget] Rocket Launcher")
+	game.Players.LocalPlayer.Backpack.Sword.Handle.Mesh.Scale = Vector3.new(0.2,0.2,0.2)
+	game.Players.LocalPlayer.Backpack["[Gadget] Rocket Launcher"].ToolTip = ("Science Sans's Gadget")
+	game.Players.LocalPlayer.Backpack.Sword.Handle.Mesh.MeshId = ("http://www.roblox.com/asset/?id=483890463")
+	game.Players.LocalPlayer.Backpack.Sword.Handle.Mesh.TextureId = ("http://www.roblox.com/asset/?id=483890478")
+	game.Players.LocalPlayer.Backpack.Sword.ToolTip = ("Science Sans's Portal Gun (Not Activated)")
+	game.Players.LocalPlayer.Backpack.Sword.Name = ("[Gadget] Portal Gun")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7939.28516, 1.69840097, 23.9729919, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack["Long Blue Bone"]:Remove()
+	game.Players.LocalPlayer.Backpack["Long Orange Bone"]:Remove()
+	game.Players.LocalPlayer.Backpack.Shield:Remove()
+	game.Players.LocalPlayer.Backpack["Bone Cage"]:Remove()
+	game.Players.LocalPlayer.Backpack["Bone Row"].Name = ("Bone Prototype")
+	game.Players.LocalPlayer.Backpack["Final Bones"].Name = ("Final Beams")
+	game.Players.LocalPlayer.Character.Headz.Eyes.Name = ("ET")
+	game.Players.LocalPlayer.Character.Headz.Eyes.Name = ("ETT")
+	wait(0.1)
+	game.Players.LocalPlayer.Backpack["Final Beams"].ToolTip = ("Spawns Lot of Blue Beams")
+
+	local d = game.Players.LocalPlayer.Character.Headz.ET
+	local de = game.Players.LocalPlayer.Character.Headz.ETT
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30178.6309, 0.94511956, -114.260086, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 33
+	while true do
+		wait(1)
+		d.Color = Color3.fromRGB(255,0,255)
+		de.Color = Color3.fromRGB(85,255,0)
+		wait(1)
+		d.Color = Color3.fromRGB(0,255,255)
+		de.Color = Color3.fromRGB(255,0,0)
+		wait(1)
+		d.Color = Color3.fromRGB(255,255,0)
+		de.Color = Color3.fromRGB(22,99,255)
+
+	end
+
+end)
+
+bgravity.MouseLeave:Connect(function()
+	ggtitle.Visible = false
+end)
+
+ggravity.MouseEnter:Connect(function()
+	gggtitle.Visible = true
+end)
+
+ggravity.MouseLeave:Connect(function()
+	gggtitle.Visible = false
+end)
+
+ggggravity.MouseEnter:Connect(function()
+	gggggtitle.Visible = true
+end)
+
+ggggravity.MouseLeave:Connect(function()
+	gggggtitle.Visible = false
+end)
+
+gggravity.MouseEnter:Connect(function()
+	ggggtitle.Visible = true
+end)
+
+gggravity.MouseLeave:Connect(function()
+	ggggtitle.Visible = false
+end)
+
+
+ggravity.MouseButton1Click:Connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8081.71484, 1.70111227, -92.9719849, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2)
+game.Players.LocalPlayer.Character.Headz:Remove()
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8020.12695, 1.69301105, -41.0279541, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30178.6309, 0.94511956, -114.260086, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+
+
+tggggravity.MouseButton1Click:Connect(function()
+
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8081.8335, 1.94970703, -68.1429901, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(2)
+	game.Players.LocalPlayer.Backpack.Bone:Remove()
+	game.Players.LocalPlayer.Backpack["Blue Bone"]:Remove()
+	game.Players.LocalPlayer.Backpack["Death Puddle"].Name = ("Hallow's Puddle")
+
+	local d = game.Players.LocalPlayer.Backpack["Scythe"]
+	d.Handle.Color = Color3.fromRGB(255,85,0)
+	d.Handle.ParticleEmitter:Remove()
+	d.Name = ("Hallow's Scythe")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30178.6289, 0.927138388, -71.2394333, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack["Shattered Staff"]:Remove()
+	game.Players.LocalPlayer.Backpack["Shattered Puddle"]:Remove()
+	game.Players.LocalPlayer.Backpack["Giant Spinning Tentacles"]:Remove()
+	game.Players.LocalPlayer.Backpack["Goop Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Giant Goop Blaster"]:Remove()
+	game.Players.LocalPlayer.Backpack["Shattered Darkness"].Name = ("Eve")
+	game.Players.LocalPlayer.Character.Headz:Remove()
+	wait(0.1)
+	game.Players.LocalPlayer.Backpack["Eve"].ToolTip = ("The Sun Starts Setting... NIGHT ARRIVES...")
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8020.12744, 1.69301105, -67.0282059, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Character.Headz.Eyes:Remove()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8003.71338, 1.69840097, -131.972351, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(2)
+	game.Players.LocalPlayer.Backpack["Bone Zone"]:Remove()
+	game.Players.LocalPlayer.Backpack["Spinning Bone"]:Remove()
+	game.Players.LocalPlayer.Backpack["Sword"]:Remove()
+	game.Players.LocalPlayer.Backpack["Side Bones"]:Remove()
+	game.Players.LocalPlayer.Backpack["Quad Blaster"].Name = ("Quad Orange Blasters")
+	game.Players.LocalPlayer.Backpack["Side Bones Bundle"].Name = ("Dreadful Bones")
+	game.Players.LocalPlayer.Backpack["Bone Row"].Name = ("Bone Sparrow")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30178.6309, 0.94511956, -114.260086, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
