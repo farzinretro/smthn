@@ -1,4 +1,3 @@
-
 local gui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
 local xtitle = Instance.new("TextLabel")
@@ -5455,5 +5454,7 @@ while true do
 	xttitle.BorderColor3 = Color3.fromRGB(255, 0, 0)
 	vzrbetggggravity.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
 end
+
+
 
 
